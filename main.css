@@ -1,0 +1,133 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #8a8a8a;
+}
+
+.container {
+  width: 500px;
+  margin: 0 auto;
+}
+
+.container .the-field {
+  border-radius: 4px;
+  background-color: #eee;
+  padding: 10px;
+  display: flex;
+  gap: 10px;
+}
+
+@media (min-width: 350px) {
+  .container {
+    width: 300px;
+  }
+}
+
+@media (min-width: 400px) {
+  .container {
+    width: 399px;
+  }
+}
+
+@media (min-width: 522px) {
+  .container {
+    width: 400px;
+  }
+}
+
+@media (min-width: 576px) {
+  .container {
+    width: 575px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 767px;
+  }
+}
+
+.container .the-field [type="text"] {
+  width: 80%;
+  border: none;
+  outline: none;
+  caret-color: red;
+}
+
+.container .the-field [type="text"]::placeholder {
+  color: red;
+  opacity: 0.5;
+}
+
+.container .the-field [type="submit"] {
+  height: 25px;
+  width: 20%;
+  color: white;
+  background-color: red;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.tasks {
+  width: 78%;
+
+  background-color: #eee;
+  margin: 10px auto;
+  padding: 10px;
+
+  border-radius: 4px;
+  z-index: 0;
+}
+
+.task {
+  background: white;
+  padding: 3px;
+  border-radius: 4px;
+  margin-top: 10px;
+  width: 82%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.task.done {
+  background-color: #8a8a8a;
+}
+
+.del {
+  color: white;
+  background-color: red;
+  margin-top: 10px;
+  text-align: center;
+  border-radius: 4px;
+  cursor: pointer;
+  border: none;
+}
+
+.del:hover {
+  opacity: 0.5;
+}
+
+#clear {
+  background-color: rgb(255, 0, 0);
+  color: white;
+  border-radius: 50%;
+  border: none;
+  position: relative;
+  left: 91%;
+  top: 8px;
+  cursor: pointer;
+}
+
+.list-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+[type="checkbox"] {
+  width: 15px;
+  height: 15px;
+  margin: 12px 0 0 10px;
+}
